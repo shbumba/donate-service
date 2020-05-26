@@ -1,0 +1,23 @@
+{
+  "type": "mongodb",
+  "host": "localhost",
+  "port": 27017,
+  "database": "donatedb",
+  "synchronize": true,
+  "logging": false,
+  "useUnifiedTopology": true,
+  "entities": [
+    "src/models/*.ts"
+  ],
+  "subscribers": [
+    "src/subscriber/*.ts"
+  ],
+  "migrations": [
+    "src/migration/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
