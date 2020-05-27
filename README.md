@@ -1,4 +1,5 @@
 # Donate Service
+![Image of donate-service](https://raw.githubusercontent.com/shbumba/donate-service/master/preview.png)
 
 ## Project setup
 ```
