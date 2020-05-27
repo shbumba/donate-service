@@ -1,7 +1,6 @@
 import "reflect-metadata";
 import Koa from "koa";
 import helmet from "koa-helmet";
-import cors from "@koa/cors";
 import { createConnection } from "typeorm";
 import { createKoaServer } from "routing-controllers";
 
@@ -18,7 +17,6 @@ createConnection(config.mongo)
     const app: InstanceType<typeof Koa> = createKoaServer(controllerOptions);
 
     app.use(helmet());
-    app.use(cors(config.cors));
     app.listen(config.port);
   })
   .catch((error) => console.log("Error: ", error));

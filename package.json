@@ -2,5 +2,11 @@
   "name": "donate-service",
   "version": "0.0.1",
   "author": "Shimba <sh.bumba@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "setup": "yarn --cwd \"./client\" install && yarn --cwd \"./server\" install",
+    "setup:migration": "yarn --cwd \"./server\" typeorm migration:run",
+    "start:server": "yarn --cwd \"./client\" serve",
+    "start:client": "yarn --cwd \"./server\" start:watch"
+  }
 }

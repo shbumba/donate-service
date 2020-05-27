@@ -7,7 +7,7 @@ dotenv.config({ path: ".env" });
 const isDevMode = process.env.NODE_ENV == "development";
 
 const corsConfig: cors.Options = {
-  origin: "http://example.com",
+  origin: "http://localhost:3001",
   allowMethods: "PUT",
 };
 
